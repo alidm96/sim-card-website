@@ -1,0 +1,46 @@
+.header{
+    &__title{
+        margin-right: 3rem;
+        text-transform: uppercase;
+
+        &--main,
+        &--sub{
+            display: block;
+            text-align: center;
+        }
+
+        &--main{
+            font-size: 3rem;
+            margin-top: 2rem;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            animation-name: fadeInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+        }
+
+        &--sub{
+            font-size: 2rem;
+            font-weight: 400;
+            animation: fadeInRight 1s ease-in-out;
+        }
+    }
+
+    &__images{
+        position: relative;
+
+        &--darkblob{
+            height: 400px;
+            opacity: 0.7;   
+        }
+
+        &--blueblob,
+        &--simcard{
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

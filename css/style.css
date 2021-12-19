@@ -1,101 +1,74 @@
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 *::after,
-*::before{
-    padding: 0;
-    margin: 0;
-}
+*::before {
+  padding: 0;
+  margin: 0; }
 
-html{
-    font-size: 62.5%; /* 1rem = 10px*/
-    box-sizing: inherit;
-}
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px*/
+  box-sizing: inherit; }
 
-body{
-    box-sizing: border-box;
-    font-family: sans-serif;
-    padding: 3rem;
-    color: #777;
-}
+body {
+  box-sizing: border-box; }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__title--main,
-.header__title--sub{
+.header__title {
+  margin-right: 3rem;
+  text-transform: uppercase; }
+  .header__title--main, .header__title--sub {
     display: block;
-    text-align: center;
-}
-
-.header__title{
-    margin-right: 3rem;
-    text-transform: uppercase;
-}
-
-.header__title--main{
+    text-align: center; }
+  .header__title--main {
     font-size: 3rem;
     margin-top: 2rem;
     word-spacing: 2px;
     letter-spacing: 1px;
     animation-name: fadeInLeft;
     animation-duration: 1s;
-    animation-timing-function: ease-in;
-}
-
-.header__title--sub{
+    animation-timing-function: ease-in; }
+  .header__title--sub {
     font-size: 2rem;
     font-weight: 400;
-    animation: fadeInRight 1s ease-in-out;
-}
+    animation: fadeInRight 1s ease-in-out; }
 
-.header__images{
-    position: relative;
-}
-
-.header__images--darkblob{
+.header__images {
+  position: relative; }
+  .header__images--darkblob {
     height: 400px;
-    opacity: 0.7;   
-}
-
-.header__images--blueblob,
-.header__images--simcard{
+    opacity: 0.7; }
+  .header__images--blueblob, .header__images--simcard {
     height: 400px;
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
-}
+    transform: translateX(-50%); }
 
-@keyframes fadeInLeft {
-    0%{
-        opacity: 0;
-        transform: translateX(10rem);
-    }
+body {
+  padding: 3rem;
+  color: #777; }
 
-    80%{
-        transform: translateX(-2rem);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    0%{
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80%{
-        transform: translateX(2rem);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0; }
