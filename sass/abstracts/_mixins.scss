@@ -1,0 +1,8 @@
+//clearfix separates rows
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}

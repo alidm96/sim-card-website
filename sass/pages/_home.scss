@@ -9,10 +9,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10rem 0;
 }
 
-.section-about {
-    padding: 10rem 0;
-    text-align: center;
+.section-specifications-cards {
+    background-image: linear-gradient(to bottom, rgba($primary-color, 0.5), rgba($primary-color, 0.5)),
+    url(../../img/simcard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%, 20% 0);
+    width: 100%;
 }
