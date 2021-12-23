@@ -11,13 +11,14 @@
 //components
 @import "./components/form";
 @import "./components/plan-card";
+@import "./components/section-about";
 @import "./components/section-feedback";
 @import "./components/specification-card";
 
 //layout
+@import "./layout/footer";
 @import "./layout/grid";
 @import "./layout/header";
-@import "./layout/section-about";
 
 //pages
 @import "./pages/home";
