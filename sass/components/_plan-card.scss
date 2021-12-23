@@ -56,15 +56,15 @@
         clip-path: polygon(0 0, 100% 0, 100% 80%, 66% 89%, 38% 100%, 0 100%);
         border-radius: 0.7rem 0.7rem 0 0;
         &--1 {
-            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../../img/Purple_SIM.png);
+            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../img/Purple_SIM.png);
         }
 
         &--2 {
-            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../../img/blue_sim.png);
+            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../img/blue_sim.png);
         }
 
         &--3 {
-            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../../img/pink_sim.png);
+            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../img/pink_sim.png);
         }
     }
 

@@ -13,7 +13,7 @@ body{
 
 .section-specifications-cards {
     background-image: linear-gradient(to bottom, rgba($primary-color, 0.5), rgba($primary-color, 0.5)),
-    url(../../img/simcard.jpg);
+    url(../img/simcard.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,4 +23,8 @@ body{
 
 .section-plan-cards {
     margin-top: -10rem;
+}
+
+.section-feedback {
+    margin-top: -20rem;
 }
