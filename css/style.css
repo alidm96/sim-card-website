@@ -35,6 +35,7 @@ body {
 .heading__primary {
   font-size: 3rem;
   font-weight: 700;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   display: inline-block;
   background-image: linear-gradient(to right, #1c2b97, #9fa8da);
@@ -53,6 +54,9 @@ body {
 .u-bkg-black {
   background-color: #000; }
 
+.u-center-text {
+  text-align: center; }
+
 .u-vertical-padding-lg {
   padding-top: 20rem;
   padding-bottom: 20rem; }
@@ -65,8 +69,61 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-.u-center-text {
-  text-align: center; }
+.u-mt-lg {
+  margin-top: 15rem; }
+
+.u-mt-md {
+  margin-top: 10rem; }
+
+.u-mt-sm {
+  margin-top: 5rem; }
+
+.u-mb-lg {
+  margin-bottom: 15rem; }
+
+.u-mb-md {
+  margin-bottom: 10rem; }
+
+.u-mb-sm {
+  margin-bottom: 2rem; }
+
+.form-container {
+  width: 50%;
+  padding: 5rem; }
+  .form-container .form-container__input--text:focus ~ label, .form-container .form-container__input--text:valid ~ label {
+    color: #6a1b9a;
+    top: -2.5rem;
+    transform: scale(0.9);
+    transition: all 200ms ease-in-out; }
+  .form-container__input {
+    position: relative;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    width: 50%; }
+    .form-container__input--text {
+      padding: 1rem 1rem 3rem 1rem;
+      border: none;
+      background: transparent; }
+      .form-container__input--text ~ span {
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #6a1b9a;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 200ms ease-in-out; }
+      .form-container__input--text:focus {
+        outline: 0; }
+        .form-container__input--text:focus ~ span {
+          width: 100%; }
+    .form-container__input--label {
+      color: #2c2c2c;
+      position: absolute;
+      padding: 1rem;
+      top: 0;
+      left: 0;
+      transition: all 200ms ease-in-out; }
 
 .plan-card {
   perspective: 150rem;
@@ -301,3 +358,21 @@ body {
 
 .section-feedback {
   margin-top: -20rem; }
+
+.section-form {
+  position: relative; }
+  .section-form__bkg-video {
+    height: 100%;
+    width: 100%; }
+
+.form {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/network-connection.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50rem;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }

@@ -1,6 +1,7 @@
 .heading__primary {
     font-size: 3rem;
     font-weight: 700;
+    letter-spacing: 0.5rem;
     text-transform: uppercase;
     display: inline-block; //necessary for text linear gradient
     background-image: linear-gradient(to right,$primary-color,$primary-color-light);
