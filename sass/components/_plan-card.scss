@@ -5,6 +5,7 @@
     position: relative;
 
     &__view {
+        overflow: hidden; //for clip path overflow
         transition: all 0.8s ease-in-out;
         height: 50rem;
         font-size: 2rem;
@@ -21,8 +22,8 @@
         }
 
         &--back {
-            background-color: yellow;
             transform: rotateY(180deg);
+            overflow: hidden;
 
             &--1{
                 background-image: linear-gradient(to top left, $color-purple-dark, $color-purple-light);
@@ -54,7 +55,6 @@
         background-repeat: no-repeat;
         background-position: center;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 66% 89%, 38% 100%, 0 100%);
-        border-radius: 0.7rem 0.7rem 0 0;
         &--1 {
             background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../img/Purple_SIM.png);
         }
@@ -91,9 +91,14 @@
     // Back style
 
     &--deals {
+        font-size: 1.4rem;
         color: $white-color;
-        padding: 5rem;
+        padding: 2rem;
         line-height: 3.3rem;
         font-weight: 500;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
