@@ -1,0 +1,99 @@
+.plan-card {
+    perspective: 150rem; //for perspective rotation
+    -moz-perspective: 150rem;
+    height: 50rem; //its relative so we set height of absolute to not to be zero
+    position: relative;
+
+    &__view {
+        transition: all 0.8s ease-in-out;
+        height: 50rem;
+        font-size: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 0.7rem;
+        box-shadow: 0px 1.5px 3px 2px rgba($black-color, 0.32);
+
+        &--front {
+            background-color: $white-color;
+        }
+
+        &--back {
+            background-color: yellow;
+            transform: rotateY(180deg);
+
+            &--1{
+                background-image: linear-gradient(to top left, $color-purple-dark, $color-purple-light);
+            }
+
+            &--2{
+                background-image: linear-gradient(to top left, $color-orange-dark, $color-orange-light);
+            }
+
+            &--3{
+                background-image: linear-gradient(to top left, $color-green-dark, $color-green-light);
+            }
+        }
+    }
+
+    &:hover &__view--front{
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__view--back{
+        transform: rotateY(0);
+    }
+
+    // Front style
+
+    &__picture {
+        height: 23rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 66% 89%, 38% 100%, 0 100%);
+        border-radius: 0.7rem 0.7rem 0 0;
+        &--1 {
+            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../../img/Purple_SIM.png);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../../img/blue_sim.png);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to bottom right, rgba($primary-color, 0.2), rgba($primary-color, 0.2)) ,url(../../img/pink_sim.png);
+        }
+    }
+
+    &__title {
+        background-color: rgba($color-purple-dark, 0.7);
+        color: $white-color;
+        position: absolute;
+        padding: 0.6rem;
+        top: 13rem;
+        right: 4rem;
+        font-size: 1.7rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        transform: rotate3d(1, 0, 6, -54deg);
+    }
+
+    &__details {
+        padding-top: 1.5rem;
+        list-style: none;
+        line-height: 3.3rem;
+        font-weight: 600;
+    }
+
+    // Back style
+
+    &--deals {
+        color: $white-color;
+        padding: 5rem;
+        line-height: 3.3rem;
+        font-weight: 500;
+    }
+}
