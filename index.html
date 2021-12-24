@@ -13,7 +13,23 @@
     <title>Stay Connected</title>
 </head>
 <body>
-    <div class="header u-vertical-padding-md u-center-text u-bkg-white">
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="btn-toggle">
+        <label for="btn-toggle" class="navigation__btn">
+            <span class="navigation__icon"></span>
+        </label>
+        <div class="navigation__background"></div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link">about us</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">plans</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">what do we do</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">buy a simcard</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header u-vertical-padding-md u-center-text u-bkg-white">
+        <img src="./img/favicon.png" alt="sim card logo" class="header__logo">
         <h1 class="header__title">
             <span class="header__title--main">buy a sim card</span>
             <span class="header__title--sub">connect yourself to world</span>
@@ -23,7 +39,7 @@
             <img class="header__images--blueblob" src="img/blobRoundBlue.png" alt="blue blob">
             <img class="header__images--simcard" src="img/5g-sim-card-networks-technology.png" alt="sim card">
         </div>
-    </div>
+    </header>
     <main>
         <section class="section-about u-vertical-padding-md u-center-text u-bkg-white">
             <h2 class="heading__primary">
