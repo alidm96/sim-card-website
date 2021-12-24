@@ -1,11 +1,4 @@
 .header{
-    &__logo {
-        height: 7.5rem;
-        position: absolute;
-        top: 1.2rem;
-        left: 3rem;
-    }
-
     &__title{
         margin-right: 3rem;
         text-transform: uppercase;
@@ -49,5 +42,26 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+        @include respond-to(tablet) {
+            &--blueblob, &--darkblob, &--simcard {
+                height: 220px;
+                top: 0%;
+    
+            }
+        }
+
+        @include respond-to(phone) {
+            &--blueblob, &--darkblob, &--simcard {
+                height: 160px;
+    
+            }
+        }
     }
+}
+
+.header__logo {
+    position: absolute;
+    top: 0.2rem;
+    left: 1rem;
 }

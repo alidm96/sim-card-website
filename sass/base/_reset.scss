@@ -7,9 +7,33 @@
 
 html{
     font-size: 62.5%; /* 1rem = 10px*/
-    box-sizing: inherit;
+    
+    @include respond-to(tablet-land) {
+        font-size: 56.25%; // 1rem = 9 9/16 = 56.25%
+    }
+
+    @include respond-to(tablet) {
+        font-size: 50.25%; // 1rem = 8 9/16 = 50.25%
+    }
+
+    @include respond-to(bigger-screens) {
+        font-size: 75%; // 1rem = 12 12/16 = 75%
+    } 
+
+    /*
+    @include tablet {
+        font-size: 50.25%;
+    }
+    @include phone {
+        font-size: 50%;
+    } 
+    */
 }
 
 body{
     box-sizing: border-box;
+    padding: 3rem;
+    @include respond-to(phone) {
+        padding: 1rem;
+    }
 }

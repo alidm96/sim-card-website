@@ -56,4 +56,8 @@
             transition: all 200ms ease-in-out;
         }
     }
+
+    @include respond-to(tablet) {
+        width: 80%;
+    }
 }

@@ -4,6 +4,9 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
     perspective: 150rem;
+    @include respond-to(phone) {
+        margin: 2rem auto;
+    }
 
     &__link {
         font-weight: 400;

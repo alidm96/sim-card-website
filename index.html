@@ -29,7 +29,10 @@
         </nav>
     </div>
     <header class="header u-vertical-padding-md u-center-text u-bkg-white">
-        <img src="./img/favicon.png" alt="sim card logo" class="header__logo">
+        <picture class="header__logo">
+            <source media="max-width: 37.5em" srcset="./img/favicon-small.png">
+            <img srcset="./img/favicon-edit.png 1x,./img/favicon-edit.png 2x" alt="sim card logo">
+        </picture>
         <h1 class="header__title">
             <span class="header__title--main">buy a sim card</span>
             <span class="header__title--sub">connect yourself to world</span>
@@ -257,13 +260,13 @@
                         buy a sim card
                     </h3>
                     <div class="form-container__input u-mt-md u-mb-sm">
-                        <input class="form-container__input--text" type="text" required>
-                        <label class="form-container__input--label" for="">full name</label>
+                        <input class="form-container__input--text" id="input-fullname" type="text" required>
+                        <label class="form-container__input--label" for="input-fullname">full name</label>
                         <span></span>
                     </div>
                     <div class="form-container__input">
-                        <input class="form-container__input--text" type="email" required>
-                        <label class="form-container__input--label" for="">email</label>
+                        <input class="form-container__input--text" id="input-email" type="email" required>
+                        <label class="form-container__input--label" for="input-email">email</label>
                         <span></span>
                     </div>
                     <div class="btn-flip">

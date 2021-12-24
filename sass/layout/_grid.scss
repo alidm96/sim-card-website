@@ -5,6 +5,9 @@
     // all except last-child
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        @include respond-to(tablet) {
+            margin-bottom: $gutter-vertical-small;
+        }
     }
 
     @include clearfix; // mixins 
@@ -13,7 +16,22 @@
         float: left;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+            @include respond-to(tablet) {
+                margin-right: 0px;
+                margin-bottom: $gutter-vertical-small;
+            }
         }
+        @include respond-to(tablet) {
+            width: 100% !important;
+        }
+    }
+
+    @include respond-to(tablet) {
+        width: 50rem;
+    }
+
+    @include respond-to(phone) {
+        width: 35rem;
     }
 
     .col-1-of-2 {

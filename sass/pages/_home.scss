@@ -1,7 +1,6 @@
 // general features
 
 body{
-    padding: 3rem;
     color: #777;
 }
 
@@ -9,6 +8,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond-to(phone) {
+        display: block;
+    }
 }
 
 .section-specifications-cards {
@@ -19,6 +21,13 @@ body{
     background-position: center;
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%, 20% 0);
     width: 100%;
+    @include respond-to(tablet) {
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%, 20% 0);
+    }
+    @include respond-to(phone) {
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%, 20% 0);
+        padding: 10rem 0 !important;
+    }
 }
 
 .section-plan-cards {
@@ -35,6 +44,9 @@ body{
     &__bkg-video {
         height: 100%;
         width: 100%;
+        @include respond-to(tablet) {
+            display: none;
+        }
     }
 }
 
@@ -49,6 +61,15 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include respond-to(tablet) {
+        overflow: hidden;
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0);
+    }
 }
 
 .footer {

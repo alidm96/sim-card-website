@@ -41,4 +41,25 @@
     &__copyright {
         margin-bottom: -5rem;
     }
+
+    @include respond-to(tablet) {
+        padding: 5rem 1rem;
+
+        &__nav {
+            font-size: 3rem;
+        }
+
+        &__policy {
+            border-right: none;
+            border-bottom: 1px solid $white-color;
+
+            &--paragraph {
+                padding-bottom: 2rem;
+            }
+        }
+
+        &__copyright {
+            margin-bottom: -2rem;
+        }
+    }
 }

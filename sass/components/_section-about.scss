@@ -46,5 +46,36 @@
                 transform: rotate(0) skew(0);
             }
         }
+
+        @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
+            margin: 0 2rem;
+
+            .about__card--img {
+                filter: grayscale(0);
+            }
+
+            .about__card--title {
+                color: $white-color;
+                background-color: rgba($black-color, 0.75);
+                transform: rotate(0) skew(0);
+            }
+        }
+    }
+
+    @include respond-to(tablet) {
+
+        margin: 5rem 2rem;
+        &__card {
+            transform: skewX(10deg);
+            height: 30rem;
+
+            &--title {
+                font-size: 1.8rem;
+            }
+        }
+    } 
+    @include respond-to(phone) {
+        margin: 5rem;
     }
 }
